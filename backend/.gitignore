@@ -1,0 +1,34 @@
+# Binaries
+spv-server
+*.exe
+*.dll
+*.so
+*.dylib
+build/
+
+# Environment files
+.env
+.env.local
+
+# Go
+*.test
+*.out
+go.work
+go.work.sum
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependencies
+vendor/
