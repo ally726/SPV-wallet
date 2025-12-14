@@ -42,7 +42,7 @@ class SPVWalletApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           brightness: Brightness.light,
           scaffoldBackgroundColor: Colors.grey[50],
-          cardTheme: const CardTheme(
+          cardTheme: const CardThemeData(
             color: Colors.white,
             elevation: 2,
           ),
