@@ -2,7 +2,7 @@
 
 ## 1\. **Start Bitcoin Core**
 
-Edit your `bitcoin.conf` file (usually located at `~/.bitcoin/bitcoin.conf` or `%APPDATA%\Bitcoin\bitcoin.conf`) and ensure it includes the following configuration:
+Edit your `bitcoin.conf` file and ensure it includes the following configuration:
 
 ```ini
 server=1
@@ -15,12 +15,12 @@ rpcpassword=test
 rpcport=18443
 rpcallowip=0.0.0.0/0
 
-fallbackfee=0.0001
-txindex=1
+fallbackfee=0.0001 # Bitcoin v29.1
+txindex=1 # Bitcoin v29.1
 
 # Enable SPV support (BIP158)
-blockfilterindex=1
-peerblockfilters=1
+blockfilterindex=1 # Bitcoin v29.1
+peerblockfilters=1 # Bitcoin v29.1
 ```
 
 Start Bitcoin Core:
@@ -31,7 +31,7 @@ bitcoind -regtest -daemon
 
 ## 2\. **Configure Environment**
 
-Create a `.env` file in the `wallet_backend/` directory:
+Create a `.env` file in the `backend/` directory:
 
 ```ini
 RPC_HOST=127.0.0.1
