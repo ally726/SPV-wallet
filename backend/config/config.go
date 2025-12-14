@@ -44,7 +44,7 @@ func Load() (*Config, error) {
 		RPCPassword:     getEnv("RPC_PASSWORD", "test"),
 		Network:         getEnv("NETWORK", "regtest"),
 		ContractAddress: getEnv("CONTRACT_ADDRESS", "5c26651e9c97db61d8b5ca31f34d4ebae8498b12c3213797036657b176fe2583"),
-		SPVMode:         getBoolEnv("SPV_MODE", true), // Default to SPV mode
+		SPVMode:         getBoolEnv("SPV_MODE", false),
 	}
 
 	// Validate required fields
